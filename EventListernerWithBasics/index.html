@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>My First html with js project</h2>
+            <h5>Mari</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Nihil ipsa repellendus veritatis possimus, minus doloribus
+                 sint necessitatibus facere iusto, et ipsam ad, suscipit 
+                 iste accusamus optio velit tempore quos est?</p>
+            <button class="delete" onclick="deleteBook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="over-lay">
+    </div>
+    <div class="container-box">
+        <h2>Add book</h2>
+        <form>
+            <input placeholder="Author name" id="author-name">
+            <input placeholder="Book title" id="book-title">
+            <textarea placeholder="Content" id="content"></textarea>
+            <div class="button-style">
+                <button id="cancel-button">Cancel</button>
+                <button id="save-button">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <button class="add-button" id="pop-add-button">+</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
